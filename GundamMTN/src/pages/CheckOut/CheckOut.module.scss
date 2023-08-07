@@ -1,0 +1,265 @@
+
+.wrapper {
+
+    .inner {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        .infor-order {
+            width: 65%;
+            .infor-order-header {
+
+                img {
+                    width: 110px;
+                    height: 110px;
+                }
+            }
+            .infor-order-main {
+                display: flex;
+                justify-content: space-between;
+                .infor-buy {
+                    width: 49%;
+                    .infor-buy--title {
+                        margin-bottom: 12px;
+                    }
+                    .infor-buy--form {
+                        .form-group {
+                            position: relative;
+                            margin-bottom: 16px;
+                        }
+                        
+                        .form-control,
+                        .form-control--select {
+                            width: 100%;
+                            padding: 10px 5px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            font-size: 16px;
+                        }
+                        
+                        .floating-label {
+                            position: absolute;
+                            top: 10px;
+                            left: 5px;
+                            pointer-events: none;
+                            transition: 0.2s ease-out;
+                            font-size: 16px;
+                        }
+                    
+                        .form-control:not(:placeholder-shown) + .floating-label,
+                        .form-control:focus + .floating-label {
+                        font-size: 12px;
+                        top: -10px;
+                        left: 5px;
+                        background-color: #fff;
+                        padding: 0 5px;
+                        }
+                        .form-control--select + .floating-label {
+                            font-size: 12px;
+                            top: -10px;
+                            left: 5px;
+                            background-color: #fff;
+                            padding: 0 5px;
+                        }
+                    }
+                }
+                .infor-ship {
+                    width: 48%;
+                    margin-right: 12px;
+                    
+                    .infor-ship--shipment {
+                        margin-bottom: 18px;
+                        h5 {
+                            margin-bottom: 12px;
+                        }
+                        .infor-ship--shipment__main {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            border-radius: 10px;
+                            border: 1px solid #ccc;
+                            width: 100%;
+                            padding: 12px;
+                            .shipment__main {
+
+                            }
+                        }  
+                    }
+                    .infor-ship--checkout {
+                        h5 {
+                            margin-bottom: 18px;
+                        }
+                        .infor-ship--checkout__main {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            border-radius: 10px;
+                            border: 1px solid #ccc;
+                            width: 100%;
+                            padding: 12px;
+                            .checkout__main {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .infor-total {
+            width: 35%;
+            background-color: var(--silver);
+            padding: 20px 10px;
+            .infor-total--title {
+
+            }
+            .infor-total--list-products {
+                height: 240px;
+                overflow-y: scroll;
+                margin-top: 20px;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+
+                .products {
+                    height: 70px;
+                    width: 100%;
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    .product-detail {
+
+                        .product-detail--main {
+                            display: flex;
+                            justify-content: space-between;
+                            .product-detail--image {
+                                position: relative;
+                                margin-right: 6px;
+                                img {
+                                    width: 45px;
+                                    height: 45px;
+                                    border-radius: 5px;
+                                }
+                                .product-detail--quantity {
+                                    position: absolute;
+                                    top: -10px;
+                                    right: -8px;
+                                    background-color: aqua;
+                                    border-radius: 50%;
+                                    width: 22px;
+                                    height: 22px;
+                                    align-items: center;
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                            }
+                            .product-detail--title {
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                                span {
+                                    font-size: 1.4rem;
+                                    
+                                }
+                            }
+                        }
+                    }
+                    .product-detail--total-price {
+                        max-width: 100%;
+                        // overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        span {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .infor-total--code-sale {
+                display: flex;
+                margin-top: 20px;
+                flex-direction: column;
+                justify-content: space-between;
+                .form-group {
+                    position: relative;
+                    // width: 70%;
+                    display: flex;
+                    button {
+                        margin: 0 8px;
+                    }
+                }
+                .infor-total--main-item {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+                
+                .form-control,
+                .form-control--select {
+                    width: 100%;
+                    padding: 10px 5px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 16px;
+                }
+                
+                .floating-label {
+                    position: absolute;
+                    top: 10px;
+                    left: 5px;
+                    pointer-events: none;
+                    transition: 0.2s ease-out;
+                    font-size: 16px;
+                }
+            
+                .form-control:not(:placeholder-shown) + .floating-label,
+                .form-control:focus + .floating-label {
+                font-size: 12px;
+                top: -10px;
+                left: 5px;
+                background-color: #fff;
+                padding: 0 5px;
+                }
+                .form-control--select + .floating-label {
+                    font-size: 12px;
+                    top: -10px;
+                    left: 5px;
+                    background-color: #fff;
+                    padding: 0 5px;
+                }
+            }
+            .infor-total--detail {
+                margin: 20px 0;
+                padding: 20px 0;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                .infor-total--main-item {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            .infor-total--total {
+                .infor-total--main-item {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    .total {
+                        color: var(--primary);
+                        font-weight: 600;
+                        font-size: 2rem;
+                    }
+                }
+                .infor-total--function {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            
+        }
+    }
+    h5 {
+       font-size: 1.9rem; 
+    }
+}
+  
+  

@@ -1,0 +1,109 @@
+
+.wrapper {
+    background-color: var(--silver);
+
+}
+
+.inner {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .breadcrumb {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: var(--white);
+        border-radius: 8px;
+        width: 100%;
+        min-height: 45px;
+        padding: 0 8px;
+        a, span {
+            font-weight: 300;
+            font-size: 1.7rem;
+        }
+        a:hover {
+            color: var(--primary);
+            transition: color 0.3s;
+        }
+    }
+
+    .content {
+        display: flex;
+        background-color: var(--white);
+        border-radius: 8px;
+        width: 100%;
+        padding: 8px 12px;
+        margin-top: 20px;
+        .content-main {
+            > h5 {
+                font-size: 2rem;
+                font-weight: 500;
+                display: block;
+                margin-bottom: 12px;
+            }
+            .product-sort {
+                display: flex;
+                border-top: 1px solid #ccc;
+                padding: 12px 4px;
+                .product-sort--list {
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                        margin-left: 12px;
+                        input{
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+            .content-main__product {
+                display: flex;
+                flex-direction: column;
+                border-top: 1px solid #ccc;
+                padding-top: 12px;
+                width: 100%;
+                align-items: center;
+                padding-bottom: 48px;
+                position: relative;
+                .content-main__product--list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    
+                }
+                .product-pagination {
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 0;
+
+                    button {
+                        color: black;
+                        float: left;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                    button.active {
+                        background-color: var(--primary);
+                        color: white;
+                    }
+                    button.disable {
+                        cursor: auto;
+                        opacity: 0.4;
+                        // border: none;
+                    }
+                    button:not(.active):not(.disable):hover{
+                        background-color: var(--primary);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    h6{
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+}

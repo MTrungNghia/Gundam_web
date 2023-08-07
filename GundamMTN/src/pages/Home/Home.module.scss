@@ -1,0 +1,58 @@
+.wrapper {
+    width: 100%;
+    background-color: var(--silver);
+}
+
+.inner {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .slide {
+        width: 100%;
+        margin-top: 16px;
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    .fearured-category {
+        max-width: 100%;
+        background-color: var(--white);
+        border-radius: 10px;
+        padding-top: 20px;
+        margin-top: 8px;
+        .fearured-category__title {
+            font-weight: 600;
+            display: block;
+            padding-left: 24px;
+            font-size: 2rem;
+        }
+
+        .fearured-category__list {
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+        margin-bottom: 16px;
+        div {
+            width: 32%;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}
+
+.list_product {
+    background-color: var(--white);
+    margin-bottom: 16px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}

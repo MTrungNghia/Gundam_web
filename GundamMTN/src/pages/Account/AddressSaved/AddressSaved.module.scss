@@ -1,0 +1,251 @@
+
+.wrapper {
+    background-color: var(--silver);
+    .form_main {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.6);
+        z-index: 10;
+        // form {
+        //     position: absolute;
+        //     background-color: var(--white);
+        //     width: 50%;
+        //     height: 60%;
+        //     top: 15%;
+        //     left: 25%;
+        //     margin-left: auto;
+        //     margin-right: auto;
+        //     border-radius: 8px;
+
+        // }
+        .address-form {
+            position: absolute;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            top: 15%;
+            left: 40%;
+            background-color: var(--white);
+            border-radius: 8px;
+          }
+          
+          .form-title {
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+          }
+          
+          .form-group {
+            margin-bottom: 15px;
+          }
+          
+          .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+          }
+          
+          .input-label {
+            flex-basis: 120px;
+            margin-right: 10px;
+            font-weight: bold;
+          }
+          
+          .input-text,
+          .select-input,
+          .checkbox-input {
+            flex-grow: 1;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+          
+          .checkbox-label {
+            font-size: 14px;
+          }
+          
+          .button-group {
+            display: flex;
+            justify-content: space-between;
+          }
+          
+          .submit-button,
+          .cancel-button {
+            padding: 8px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
+          .submit-button:hover,
+          .cancel-button:hover {
+            background-color: #0056b3;
+          }
+          
+          .submit-button:disabled,
+          .cancel-button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+          }
+          
+    }
+}
+
+.inner {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .breadcrumb {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: var(--white);
+        border-radius: 8px;
+        width: 100%;
+        min-height: 45px;
+        padding: 0 8px;
+        a, span {
+            font-weight: 300;
+            font-size: 1.7rem;
+        }
+        a:hover {
+            color: var(--primary);
+            transition: color 0.3s;
+        }
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+        padding: 8px 0px;
+        margin-top: 20px;
+        .profile__detail {
+            width: 60%;
+            margin-right: 18px;
+            .profile__detail--main {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 12px;
+                .order-history, .profile__detail--welcome {
+                    width: 49%;
+                    background-color: var(--white);
+                    border-radius: 8px;
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 8px;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            margin: 8px 0px;
+                        }
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                    
+                }
+                .order-history:hover {
+                    span {
+                        color: var(--primary);
+                    }
+                }
+                .profile__detail--welcome {
+                    .profile__detail--name {
+                        color: var(--primary);
+                    }
+                }
+            }
+            .profile__detail--infor {
+                background-color: var(--white);
+                border-radius: 8px;
+                padding: 12px;
+                .btn-add {
+                    transition: background-color 0.3s;
+                }
+                .btn-add:hover {
+                    background-color: var(--yellow);
+                }
+                .profile__detail--address {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    padding: 0px 16px;
+                    .address__detail {
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        span {
+                            font-weight: 300;
+                        }
+                        span b{
+                            font-weight: 600;
+                        }
+                        .address__default {
+                            color: var(--green);
+                            font-weight: 500;
+                        }
+                    }
+                    .profile__detail--btn {
+                        width: 10%;
+                        
+                    }
+                }
+                .profile__detail--address + .profile__detail--address {
+                    padding-top: 20px;
+                    border-top: 1px solid #ccc;
+                }
+            }
+        }
+        .profile__function {
+            width: 40%;
+            background-color: var(--white);
+            border-radius: 8px;
+            max-height: 220px;
+            .profile__function--list {
+                li {
+                    height: 50px;
+                    margin: 4px 16px;
+                    border-bottom: 1px solid #ccc;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    a {
+                        cursor: pointer;
+                        svg {
+                            margin-right: 12px;
+                        }
+                        span {
+                            transition: color 0.3s;
+                        }
+                    }
+                    a:hover span{
+                        color: var(--primary);
+                    }
+                }
+                li:last-child {
+                    border:none;
+                }
+                li:nth-child(2) {
+                    a {
+                        span {
+                            color: var(--primary)!important;
+                        font-weight: 600;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}

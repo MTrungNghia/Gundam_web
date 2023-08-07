@@ -1,0 +1,19 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    .title {
+        background-color: var(--primary);
+        padding: 12px 8px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--white);
+    }
+    .list-product {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 12px 8px;
+    }
+}

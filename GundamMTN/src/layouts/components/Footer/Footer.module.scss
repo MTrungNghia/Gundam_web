@@ -1,0 +1,117 @@
+footer {
+    border-top: 4px solid var(--primary);
+    padding: 40px 0;
+    
+}
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width:88%;
+    display: flex;
+    flex-direction: column;
+    .content-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .logo {
+            width: 25%;
+            align-items: center;
+            text-align: center;
+        }
+        .policy {
+            width: 25%;
+            a {
+                font-weight: 300;
+                line-height: 2.4rem;
+            }
+            li a:hover {
+                color: var(--primary);
+                transition: color 0.5s;
+            }
+        }
+        .map,
+        .fanpage {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            margin-right: 16px;
+            img {
+                max-height: 130px;
+                max-width: 332px;
+            }
+        }
+    }
+    .infor-shop {
+        display: flex;
+        width: 100%;
+        .contact {
+            width: 50%;
+        }
+
+        .link-outside-shop {
+            width: 25%;
+            .social-network {
+                display: flex;
+                flex-direction: column;
+                .list-social-network {
+                    display: flex;
+                    margin-top: 16px;
+                    a {
+                        margin-right: 8px;
+                    }
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        border: 50%;
+                    }
+                }
+                
+            }
+            .checkout {
+                display: flex;
+                flex-direction: column;
+                img {
+                    width: 42px;
+                    height: 32px;
+                }
+            }
+        }
+        .shop_system {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 250px;
+                height: 200px;
+            }
+            .btn {
+                background-color: var(--black);
+                width: 70%;
+            }
+        }
+        .shop_system:hover {
+            .btn {
+                background-color: var(--primary);
+                transition: background-color 0.5s;
+            }
+        }
+
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+li {
+    list-style: none;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 12px;
+}
