@@ -35,8 +35,6 @@ function CheckOut() {
         let currentAddress = listAddress.filter(address => address.is_default === true);
         setCurrentAddress(currentAddress);
         setAddressDetail(currentAddress[0]);
-        console.log("init");
-        console.log(currentAddress);
     }
 
     function setAddressDetail(address) {
